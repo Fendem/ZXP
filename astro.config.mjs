@@ -7,7 +7,7 @@ import tailwindcss from '@tailwindcss/vite';
 
 // https://astro.build/config
 export default defineConfig({
-  adapter: vercel(),
+  adapter: vercel({ mode: "serverless" }),
   output: "server",
   vite: {
     plugins: [tailwindcss()]
