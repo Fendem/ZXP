@@ -3,7 +3,7 @@ import vercel from '@astrojs/vercel';
 
 export default defineConfig({
   adapter: vercel({
-    mode: 'serverless', // Make sure you're using the serverless mode
+    mode: 'serverless', // Enable serverless functions on Vercel
   }),
-  output: 'server',
+  output: 'server', // Explicitly set Astro to server-side rendering (SSR)
 });
